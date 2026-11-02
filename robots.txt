@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://braai-nation.netlify.app/sitemap.xml

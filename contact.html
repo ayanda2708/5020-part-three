@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact us for general messages - Sponsorship, complaints, jobs">
+<title>Contact Us | General Message | Braai Nation</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+<header>
+    <img src="Images/500ed3110431111.Y3JvcCw0NTAwLDM1MTksMCw0OTA.png"style="width:85px:height:75px;" alt="Braai Nation Logo">
+<nav><a 
+    href="index.html">Home|</a><a 
+    href="about.html">About|</a><a 
+    href="services.html">Menu|</a><a 
+    href="enquiry.html">Enquiry|</a><a 
+    href="contact.html">Contact|</a><a
+    href="gallery.html">Gallery|</a>
+</nav>
+</header>
+<main>
+<h1>CONTACT US - GENERAL</h1>
+<p><b>Location:</b>Meadowlands, Soweto, Johannesburg</p>
+<p><b>Hours:</b>Mon-Sun: 10AM-10PM</p>
+<P><b>WhatsApp:</b>065 650 9869</P>
+<p><b>Purpose:</b> General message to organisation - compiled into email</p>
+<form onsubmit="return validateContact(event)">
+  <label>Full Name</label>
+  <input type="text" id="name" required minlength="3">
+  <label>Email</label>
+  <input type="email" id="email" required>
+  <label>Type</label>
+  <select id="msgType" required>
+    <option>General Enquiry</option>
+    <option>Complaint</option>
+    <option>Compliment</option>
+    <option>Sponsorship</option>
+    <option>Job Application</option></select>
+  <label>Full Message (min 20 chars)</label>
+  <textarea id="message" rows="6" required minlength="20"></textarea>
+  <button type="submit" class="btn-green">Send via Email</button>
+  <p id="error" style="color:red"></p>
+</form>
+<h2>Find Us</h2>
+<div id="map"></div>
+</main>
+<footer>
+    <p>ST10515780# Braai Nation © 2021</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
